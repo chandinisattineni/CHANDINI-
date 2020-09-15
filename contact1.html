@@ -8,9 +8,72 @@
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-</head>
+    
+    <style>
+      body {
+        font-family: Arial, Helvetica, sans-serif;
+      }
+      
+      * {
+        box-sizing: border-box;
+      }
+      
+      /* Style inputs */
+      input[type=text], select, textarea {
+        width: 100%;
+        padding: 12px;
+        border: 1px solid #ccc;
+        margin-top: 6px;
+        margin-bottom: 16px;
+        resize: vertical;
+      }
+      
+      input[type=submit] {
+        background-color: #4CAF50;
+        color: white;
+        padding: 12px 20px;
+        border: none;
+        cursor: pointer;
+      }
+      
+      input[type=submit]:hover {
+        background-color: #45a049;
+      }
+      
+      /* Style the container/contact section */
+      .container {
+        border-radius: 5px;
+        padding: 10px;
+      }
+      
+      /* Create two columns that float next to eachother */
+      .column {
+        float: left;
+        width: 50%;
+        margin-top: 6px;
+        padding: 20px;
+      }
+      
+      /* Clear floats after the columns */
+      .row:after {
+        content: "";
+        display: table;
+        clear: both;
+      }
+      
+      /* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+      @media screen and (max-width: 600px) {
+        .column, input[type=submit] {
+          width: 100%;
+          margin-top: 0;
+        }
+      }
+      </style>
+
+
+  </head>
 <body>
-    <body background="https://www.pngkit.com/png/detail/248-2482685_janasena-logo-jana-sena-party.png" style="background-repeat:no repeat;background-size:cover"></body>
+    <span style="background-color: black;">
     <nav class="navbar navbar-expand-sm bg-success sticky-top">
     <!--Links-->
     <ul class="navbar-nav">
@@ -29,11 +92,35 @@
     </ul>
 </nav>
             <div>
-              <p>
-                  <h4>janasenaparty@gmail</h4></p>
-              <p> <h4>7675647909</h4></p>
+              
+              <body background="https://cutewallpaper.org/21/wallpaper-red-and-white/red-and-white-wallpaper-james127.co.jpg" style="background-size: cover;">
+                <div class="container">
+                    <div style="text-align:center">
+                      <h1>Contact Us</h1>
+                      <p><h3>Feel free to contact us</h3></p>
+                    </div>
+                    <div class="row">
+                      <div class="column">
+                        <img src="https://lh3.googleusercontent.com/Cu4YPdX7EUi7HMZGPuaC7XDwElaCoeSpq5A1RY-fbcThVlCtpPMlNwwH21p1h43MFg" align="left">
+                      </div>
+                      <div class="column">
+                        <form action="/action_page.php">
+                          <label for="fname"><h4>First Name</h4></label>
+                          <input type="text" id="fname" name="firstname" placeholder="Your name.." style="padding: 10px 10px;" width="600px">
+                          <br>
+                          <label for="lname"><h4>Last Name</h4></label>
+                          <input type="text" id="lname" name="lastname" placeholder="Your last name.." style="padding: 10px 10px;" width="600px">
+                          <br>
+                          <label for="subject"><h4>Issue</h4></label>
+                          <textarea id="subject" name="subject" placeholder="Write something.." style="height:170px"></textarea>
+                          <input type="submit" value="Submit">
+                        </form>
+                      </div>
+                    </div>
+
             </div>
-            <a href="about1.html"><h4><span style="color: red;">>>PREVIOUS</span></h4></a>
-            <a href="carosel nav login gallary.html"><h4><span style="color: red;">HOME</span></h4></a>
+           <center> <a href="about1.html"><h4><span style="color: red;">>>PREVIOUS</span></h4></a>
+            <a href="carosel nav login gallary.html"><h4><span style="color: red;">HOME</span></h4></a></center>
+            </span>
 </body>
 </html>
