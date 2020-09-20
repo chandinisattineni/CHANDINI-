@@ -97,6 +97,7 @@
                 <div class="container">
                     <div style="text-align:center">
                       <h1>Contact Us</h1>
+                      <h3>Do you want membership in janasena</h3>
                       <p><h3>Feel free to contact us</h3></p>
                     </div>
                     <div class="row">
@@ -107,7 +108,7 @@
                       <h3><span style="color: blue; text-align: left;">MOBILE NO:</span>7675647909</h3>
                       </div>
                       <div class="column">
-                        <form action="/action_page.php">
+                        <form id="form" class="container">
                           <label for="fname"><h4>First Name</h4></label>
                           <input type="text" id="fname" name="Firstname" placeholder="Your name.." required="required" style="padding: 10px 10px;" width="600px">
                           <br>
@@ -118,8 +119,12 @@
                           <br>
                           <input type="email" id="Email_Id" name="Email id" placeholder="@gmail.com" required="required" style="padding: 10px 10px;" width="600px">
                           <br>
-                          <label for="subject"><h4>Message</h4></label>
-                          <textarea id="subject" name="subject" placeholder="Write something.." required="required" style="height:170px"></textarea>
+                          <label for="lname"><h4>Mobile no:</h4></label>
+                          <br>
+                          <input type="number" id="numb" name="Mobile no" placeholder="Your Mobile no..." required="required" style="padding: 10px 10px;" width="600px">
+                          <br>
+                          <label for="subject"><h4>Reason</h4></label>
+                          <textarea id="subject" name="subject" placeholder="reason for joining in janasena......" required="required" style="height:170px"></textarea>
                           <input type="submit" value="Submit" onclick="show_alert()">
                         </form>
                       </div>
@@ -128,7 +133,22 @@
                       function show_alert()
                       {
                         alert("Your message is successfully submitted.our team will respond as soon as possible");  
-                      } 
+                      }
+                        var f,l,e,n,m,form;
+                        form=document.getElementById('form');
+                        form.addEventListener("submit",function(eve){
+                          eve.preventDefault();
+                          f=document.getElementById('fname').value; 
+                          console.log('first name entered is:'+f);
+                          l=document.getElementById('lname').value; 
+                          console.log('last name entered is:'+l);
+                          e=document.getElementById('Email_Id').value; 
+                          console.log('email entered is:'+e);
+                          n=document.getElementById('numb').value; 
+                          console.log('mobile no entered is:'+n);
+                          n=document.getElementById('subject').value; 
+                          console.log('reason entered is:'+n);
+                      })
                     </script>
            <center> <a href="about1.html"><h4><span style="color: red;">>>PREVIOUS</span></h4></a>
             <a href="carosel nav login gallary.html"><h4><span style="color: red;">HOME</span></h4></a></center>
